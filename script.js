@@ -1,15 +1,61 @@
-document.querySelectorAll("a").forEach(anchor => {
-anchor.addEventListener("click", function(e){
+// =========================
+// SMOOTH SCROLLING
+// =========================
 
-if(this.hash !== ""){
+document.querySelectorAll('a[href^="#"]').forEach(link => {
 
-e.preventDefault();
+    link.addEventListener("click", function (event) {
 
-const hash = this.hash;
+        const target = document.querySelector(this.getAttribute("href"));
 
-document.querySelector(hash).scrollIntoView({
-behavior:"smooth"
+        if (target) {
+
+            event.preventDefault();
+
+            target.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+
+        }
+
+    });
+
 });
-}
-});
+
+
+// =========================
+// SCROLL REVEAL ANIMATION
+// =========================
+
+const cards = document.querySelectorAll(
+    ".skill-card, .project-card, .education-card, .about-box"
+);
+
+const observer = new IntersectionObserver(
+    (entries) => {
+
+        entries.forEach((entry) => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("show");
+
+            }
+
+        });
+
+    },
+    {
+        threshold: 0.15
+    }
+);
+
+
+cards.forEach((card) => {
+
+    card.classList.add("hidden");
+
+    observer.observe(card);
+
 });

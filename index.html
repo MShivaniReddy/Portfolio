@@ -1,41 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Majji Shivani Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Majji Shivani</h1>
-    <h3>AI & ML Graduate</h3>
 
+<header>
+    <nav>
+        <h2>Shivani</h2>
+
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <img src="assets/profile.jpg" alt="Profile">
+
+    <h1>Majji Shivani</h1>
+
+    <h3>AI & Machine Learning Graduate</h3>
+
+    <p>
+        Passionate about AI, Machine Learning,
+        Data Science and solving real-world problems.
+    </p>
+
+    <a href="assets/Shivani_Resume.pdf" class="btn">
+        Download Resume
+    </a>
+</section>
+
+<section id="about">
     <h2>About Me</h2>
+
     <p>
         Computer Science Engineering graduate specializing in
         Artificial Intelligence and Machine Learning.
+        Skilled in Python, SQL, Machine Learning,
+        Data Analysis and Streamlit.
     </p>
+</section>
 
+<section id="skills">
     <h2>Skills</h2>
-    <ul>
-        <li>Python</li>
-        <li>SQL</li>
-        <li>Machine Learning</li>
-        <li>Data Analysis</li>
-        <li>Streamlit</li>
-    </ul>
 
+    <div class="skills-grid">
+        <div class="card">Python</div>
+        <div class="card">SQL</div>
+        <div class="card">Machine Learning</div>
+        <div class="card">Data Analysis</div>
+        <div class="card">Streamlit</div>
+        <div class="card">GitHub</div>
+        <div class="card">Scikit-Learn</div>
+        <div class="card">Pandas</div>
+    </div>
+</section>
+
+<section id="projects">
     <h2>Projects</h2>
 
-    <h3>Smart Soil Health X-Ray</h3>
-    <p>
-        Explainable AI framework for soil health assessment and
-        resilience prediction.
-    </p>
+    <div class="project-card">
+        <h3>Smart Soil Health X-Ray</h3>
+        <p>
+            Explainable AI framework for soil health analysis
+            and resilience prediction using SHAP & LIME.
+        </p>
+    </div>
 
-    <h3>Heart Disease Prediction</h3>
-    <p>
-        Machine learning application for predicting heart disease risk.
-    </p>
+    <div class="project-card">
+        <h3>Heart Disease Prediction</h3>
+        <p>
+            Machine Learning application that predicts
+            heart disease risk using healthcare data.
+        </p>
+    </div>
 
+    <div class="project-card">
+        <h3>Student Management System</h3>
+        <p>
+            Python based application for managing
+            student records efficiently.
+        </p>
+    </div>
+</section>
+
+<section id="contact">
     <h2>Contact</h2>
-    <p>Email: your-email@gmail.com</p>
+
+    <p>Email: majjishivanireddy712@gmail.com</p>
+
+    <div class="socials">
+        <a href="YOUR_LINKEDIN_URL">
+            <i class="www.linkedin.com/in/shivani-majji"></i>
+        </a>
+
+        <a href="YOUR_GITHUB_URL">
+            <i class="https://github.com/MShivaniReddy"></i>
+        </a>
+    </div>
+</section>
+
+<script src="script.js"></script>
+
 </body>
 </html>

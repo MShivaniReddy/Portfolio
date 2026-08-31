@@ -1,120 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Majji Shivani Portfolio</title>
 
+    <title>Majji Shivani | AI & Machine Learning Graduate</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
 
-<header>
-    <nav>
-        <h2>Shivani</h2>
+    <!-- ================= NAVBAR ================= -->
 
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <nav>
 
-<section class="hero">
-    <div class="profile-container">
-    <img src="./assets/profile.jpg" 
-         alt="Majji Shivani"
-         class="profile-img">
-    </div>
-    
+            <h2>Shivani</h2>
+
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
     <section class="hero">
-    <img src="./assets/profile.jpg" alt="Majji Shivani">
-    
-    <h1>Majji Shivani</h1>
 
-    <h3>AI & Machine Learning Graduate</h3>
+        <!-- Profile Photo -->
+        <img src="./assets/profile.jpg"
+             alt="Majji Shivani"
+             class="profile-img">
 
-    <p>
-        Passionate about AI, Machine Learning,
-        Data Science and solving real-world problems.
-    </p>
+        <p class="hello">Hello, I'm</p>
 
-    <a href="./assets/Shivani_resume.pdf" class="btn" target="_blank">
-    <i class="fas fa-download"></i> Download resume
-    </a>
-</section>
+        <h1>Majji Shivani</h1>
 
-<section id="about">
-    <h2>About Me</h2>
+        <h3>AI & Machine Learning Graduate</h3>
 
-    <p>
-        Hello! I'm Majji Shivani, a Computer Science Engineering graduate specializing in Artificial Intelligence and Machine Learning. I am passionate about building data-driven solutions and applying AI technologies to solve real-world problems.
-I have hands-on experience in Python, SQL, Machine Learning, Data Analysis, Streamlit, and GitHub. My key projects include Smart Soil Health X-Ray, an explainable AI-based soil analysis system, and a Heart Disease Prediction System using machine learning techniques.
-I am a quick learner with strong problem-solving skills and a keen interest in AI, Data Science, and Software Development. I am currently seeking opportunities to apply my technical knowledge, gain industry experience, and contribute to innovative projects.
-
-    </p>
-</section>
-
-<section id="skills">
-    <h2>Skills</h2>
-
-    <div class="skills-grid">
-        <div class="card">Python</div>
-        <div class="card">SQL</div>
-        <div class="card">Machine Learning</div>
-        <div class="card">Data Analysis</div>
-        <div class="card">Streamlit</div>
-        <div class="card">GitHub</div>
-        <div class="card">Scikit-Learn</div>
-        <div class="card">Pandas</div>
-    </div>
-</section>
-
-<section id="projects">
-    <h2>Projects</h2>
-
-    <div class="project-card">
-        <h3>Smart Soil Health X-Ray</h3>
-        <p>
-            **Smart Soil Health X-Ray** is an AI-based soil analysis system that uses Machine Learning to assess soil health and predict resilience. It analyzes parameters such as N, P, K, pH, moisture, temperature, and rainfall. The project uses **SHAP and LIME** for Explainable AI and provides region-specific insights through an interactive **Streamlit** application.
+        <p class="hero-description">
+            Passionate about Artificial Intelligence, Machine Learning,
+            Data Analysis and building real-world solutions using technology.
         </p>
-    </div>
 
-    <div class="project-card">
-        <h3>Heart Disease Prediction</h3>
-        <p>
-            **Heart Disease Prediction** is a Machine Learning-based application that predicts the likelihood of heart disease using patient health parameters. The project includes data preprocessing, model training, and an interactive **Streamlit** interface to provide quick and user-friendly predictions.
+        <div class="hero-buttons">
+
+            <!-- Resume -->
+            <a href="./assets/Shivani_Resume.pdf"
+               class="btn"
+               target="_blank">
+                <i class="fa-solid fa-download"></i>
+                Download Resume
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="YOUR_LINKEDIN_URL"
+               class="btn secondary-btn"
+               target="_blank"
+               rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+                LinkedIn
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <div class="about-box">
+
+            <p>
+                I'm Majji Shivani, a Computer Science Engineering graduate
+                specializing in Artificial Intelligence and Machine Learning.
+                I am passionate about building data-driven solutions and
+                applying AI technologies to solve real-world problems.
+            </p>
+
+            <p>
+                I have hands-on experience in Python, SQL, Machine Learning,
+                Data Analysis, Streamlit, and GitHub. I am a quick learner
+                with strong problem-solving skills and a keen interest in
+                AI, Data Science, and Software Development.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SKILLS ================= -->
+
+    <section id="skills">
+
+        <h2>Technical Skills</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <i class="fa-brands fa-python"></i>
+                <h3>Python</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-solid fa-database"></i>
+                <h3>SQL</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-solid fa-brain"></i>
+                <h3>Machine Learning</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-solid fa-chart-line"></i>
+                <h3>Data Analysis</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h3>Streamlit</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-brands fa-github"></i>
+                <h3>Git & GitHub</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-solid fa-table"></i>
+                <h3>Pandas & NumPy</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-solid fa-robot"></i>
+                <h3>Scikit-Learn</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section id="projects">
+
+        <h2>Featured Projects</h2>
+
+        <div class="projects-grid">
+
+            <!-- Project 1 -->
+
+            <div class="project-card">
+
+                <div class="project-icon">
+                    <i class="fa-solid fa-seedling"></i>
+                </div>
+
+                <h3>Smart Soil Health X-Ray</h3>
+
+                <p>
+                    An AI-based soil analysis system that uses Machine Learning
+                    to assess soil health and predict resilience. It analyzes
+                    parameters such as N, P, K, pH, moisture, temperature and
+                    rainfall, with SHAP and LIME for Explainable AI.
+                </p>
+
+                <div class="tags">
+                    <span>Python</span>
+                    <span>Machine Learning</span>
+                    <span>SHAP</span>
+                    <span>LIME</span>
+                    <span>Streamlit</span>
+                </div>
+
+            </div>
+
+
+            <!-- Project 2 -->
+
+            <div class="project-card">
+
+                <div class="project-icon">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+
+                <h3>Heart Disease Prediction</h3>
+
+                <p>
+                    A Machine Learning-based application that predicts the
+                    likelihood of heart disease using patient health
+                    parameters. The project includes data preprocessing,
+                    model training and an interactive Streamlit interface.
+                </p>
+
+                <div class="tags">
+                    <span>Python</span>
+                    <span>Machine Learning</span>
+                    <span>Scikit-Learn</span>
+                    <span>Streamlit</span>
+                </div>
+
+            </div>
+
+
+            <!-- Project 3 -->
+
+            <div class="project-card">
+
+                <div class="project-icon">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+
+                <h3>Student Management System</h3>
+
+                <p>
+                    A simple application designed to manage student
+                    information efficiently. It allows users to add,
+                    update, view and delete student records.
+                </p>
+
+                <div class="tags">
+                    <span>Python</span>
+                    <span>Database</span>
+                    <span>CRUD</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= EDUCATION ================= -->
+
+    <section id="education">
+
+        <h2>Education</h2>
+
+        <div class="education-card">
+
+            <i class="fa-solid fa-graduation-cap"></i>
+
+            <div>
+                <h3>B.Tech - Computer Science Engineering</h3>
+
+                <p>
+                    Specialization: Artificial Intelligence & Machine Learning
+                </p>
+
+                <p>
+                    Sphoorthy Engineering College
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact">
+
+        <h2>Let's Connect</h2>
+
+        <p class="contact-text">
+            I'm currently looking for opportunities where I can apply
+            my skills, learn new technologies and contribute to
+            meaningful projects.
         </p>
-    </div>
 
-    <div class="project-card">
-        <h3>Student Management System</h3>
+        <div class="contact-info">
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                your-majjishivanireddy712@gmail.com
+            </p>
+
+        </div>
+
+
+        <div class="socials">
+
+            <!-- LinkedIn -->
+            <a href="www.linkedin.com/in/shivani-majji"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="LinkedIn">
+
+                <i class="fa-brands fa-linkedin"></i>
+
+            </a>
+
+
+            <!-- GitHub -->
+            <a href="https://github.com/MShivaniReddy"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="GitHub">
+
+                <i class="fa-brands fa-github"></i>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
         <p>
-            **Student Management System** is a simple application designed to manage student information efficiently. It allows users to add, update, view, and delete student records, making student data management easier and more organized.
+            © 2026 Majji Shivani. All Rights Reserved.
         </p>
-    </div>
-</section>
 
-<section id="contact">
-    <h2>Contact</h2>
-
-    <p>Email: majjishivanireddy712@gmail.com</p>
-
-    <div class="socials">
-        <a href="https://www.linkedin.com/in/shivani-majji/" target="_blank">
-            <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/MShivaniReddy">
-            <i class="fab fa-github"></i>
-        </a>
-    </div>
-</section>
-
-<script src="script.js"></script>
+    </footer>
 
 </body>
+
 </html>
